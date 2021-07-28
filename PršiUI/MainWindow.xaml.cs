@@ -23,6 +23,10 @@ namespace PršiUI
         public MainWindow()
         {
             InitializeComponent();
+
+            Console.WriteLine("Konec programu");
+            // 
+            //
         }
     }
 }
