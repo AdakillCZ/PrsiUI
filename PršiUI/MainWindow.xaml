@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="btnDalsiTah" Content="Odehrát Tah" HorizontalAlignment="Left" Margin="609,320,0,0" VerticalAlignment="Top" Width="116" Click="Button_Click" Height="46"/>
+        <Image HorizontalAlignment="Left" Height="198" Margin="144,74,0,0" VerticalAlignment="Top" Width="132">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.119"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button Content="Balíček" HorizontalAlignment="Left" Margin="536,51,0,0" VerticalAlignment="Top" Width="123" Height="157" Click="Button_Click_1"/>
+        <ListBox x:Name="lbKartyHrace" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="327" Margin="190,260,0,0" SelectionChanged="lbKartyHrace_SelectionChanged"/>
+        <ListBox x:Name="lbSeznamHracu" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" SelectionChanged="lbSeznamHracu_SelectionChanged"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="12" Margin="-154,-42,0,0" Stroke="Black" VerticalAlignment="Top" Width="4"/>
+
     </Grid>
 </Window>

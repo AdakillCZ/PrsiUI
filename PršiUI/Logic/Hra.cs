@@ -105,6 +105,10 @@ namespace Prší
                 {
                     Console.WriteLine("Spatne zadane cislo");
                     continue;
+                } catch (ArgumentNullException p)
+                {
+                    Console.WriteLine(p.ToString());
+                    continue;
                 }
    
 
@@ -258,7 +262,7 @@ namespace Prší
         }
 
 
-        private void rozdejKarty()
+        public void rozdejKarty()
         {
             int indexKarty = 0;
             for (int i = 0; i < 4; i++)
